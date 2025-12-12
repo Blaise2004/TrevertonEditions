@@ -256,6 +256,62 @@ body {
     /* optional – centers the image */
 }
 
+/* Image grid layout */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    /* centers the grid horizontally */
+    padding: 40px;
+    transition: transform 0.3s;
+    max-width: 800px;
+    /* optional: control overall width */
+    width: 100%;
+}
+
+/* Each image + its hover text overlay */
+.image-item {
+    position: relative;
+    overflow: visible;
+    /* prevents clipping */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Image styling */
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    border-radius: 10px;
+}
+
+.image-item:hover {
+    transform: scale(1.1);
+    /* entire block scales */
+}
+
+.image-item .description {
+    position: static;
+    /* remove absolute positioning */
+    transform: none;
+    /* remove centering transform */
+    width: 100%;
+    padding: 10px 0 0 0;
+    /* space above description */
+    color: rgb(0, 0, 0);
+    font-family: 'Dot', sans-serif;
+    font-size: 19px;
+    opacity: 1;
+    /* always visible */
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+}
+
+
 @media (max-width: 700px) {
 
     #video-background {
@@ -457,6 +513,27 @@ font-size: 15px;
              margin: 0 auto;
              /* optional – centers the image */
          }
-
-}
+   /* Image grid */
+/* Image grid */
+        .image-row {
+            grid-template-columns: 1fr;
+            gap: 15px;
+            padding: 20px;
+            width: 90%;
+            /* slightly narrower than full width */
+            max-width: 400px;
+            /* cap the max width */
+            margin: 0 auto;
+            /* center the grid */
+        }
+    
+         .image-row img {
+             width: 100%;
+             height: auto;
+             border-radius: 10px;
+             display: block;
+             margin: 0 auto;
+             /* centers the image */
+         }
+        }
 
