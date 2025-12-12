@@ -189,7 +189,7 @@ main p {
     margin: 40px auto;
     /* centers the button */
     width: fit-content;
-
+ margin-bottom: 10%;
     padding: 28px 20px;
     border-radius: 40px;
     font-size: 20px;
