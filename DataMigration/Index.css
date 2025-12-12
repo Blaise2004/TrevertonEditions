@@ -180,9 +180,14 @@ main p {
     line-height: 1.2;
     color: rgb(0, 0, 0);
     font-size: 28px;
-    font: bold;
+    font-weight: bold;
     font-family: 'Dot', sans-serif;
 }
+
+.center-text {
+    text-align: center;
+}
+
 
 .narrative-btn {
     display: block;
