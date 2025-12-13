@@ -411,19 +411,28 @@ body {
     }
 
 
-    .content-wrap {
-        flex-direction: column;
-        /* stack image above text */
-        align-items: center;
-        padding: 5px;
+     .content-wrap {
+    flex-direction: column;
+    /* stack image above text */
+     align-items: center;
+     width: 90%;
+     max-width: 480px;
+    /* try 460–520px if you want it wider */
+     padding: 12px;
+    /* adds breathing room without feeling tight */
+        
     }
-
+        
     .image-box {
-        width: 95%;
-        /* make image nicely fit the screen */
-        margin-bottom: 5px;
-    }
+         width: 100%;
+         max-width: 420px;
+    /* adjust to taste: 400–460px */
+         flex: none;
+    /* IMPORTANT: removes desktop flex constraint */
+     margin-bottom: 15px;
+                   }
 
+                   
     .text-box p {
         max-width: 100%;
        

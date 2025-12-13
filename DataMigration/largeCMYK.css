@@ -468,14 +468,22 @@ font-size: 15px;
      flex-direction: column;
      /* stack image above text */
      align-items: center;
-     padding: 5px;
+    width: 90%;
+        max-width: 480px;
+        /* try 460–520px if you want it wider */
+        padding: 12px;
+        /* adds breathing room without feeling tight */
+
  }
 
- .image-box {
-     width: 95%;
-     /* make image nicely fit the screen */
-     margin-bottom: 5px;
- }
+.image-box {
+    width: 100%;
+    max-width: 420px;
+    /* adjust to taste: 400–460px */
+    flex: none;
+    /* IMPORTANT: removes desktop flex constraint */
+    margin-bottom: 15px;
+}
 
  .text-box p {
      max-width: 100%;
@@ -502,7 +510,7 @@ font-size: 15px;
                     font-size: 20px;
                     line-height: 1.5;
                     color: rgb(14, 14, 14);
-                    max-width: 1000px, auto;
+                   
         
                 }
          .SizeRefrence {
