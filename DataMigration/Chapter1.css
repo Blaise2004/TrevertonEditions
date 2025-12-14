@@ -10,10 +10,9 @@ body {
 }
 @font-face {
     font-family: 'Dot';
-    src: url('assets/fonts/Doto/static/Doto-ExtraBold.ttf');
+    src: url('assets/fonts/Doto/static/Doto-Bold.ttf');
 
 }
-/* Background */
 .video-background {
     position: fixed;
     top: 0;
@@ -22,6 +21,32 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -2;
+
+}
+.chapter-indicator {
+    margin-top: 30px;
+    text-align: center;
+
+    font-family: 'Dot', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
+
+    pointer-events: none;
+}
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Makes sure video covers the entire area */
+}
+
+#video-background {
+    display: block;
+}
+
+#mobile-videoBackground {
+    display: none;
 }
 .home-icon {
     position: fixed;
@@ -106,7 +131,7 @@ nav {
 }
 
 nav a {
-    color: rgb(80, 79, 79);
+    color: rgb(0, 0, 0);
     font-family: 'Dot', sans-serif;
     font-weight: bold;
     font-size: 62px;
@@ -131,10 +156,21 @@ font-family: 'Dot', sans-serif;
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
+
+
+
+
+        #video-background {
+                display: none;
+            }
+        
+            #mobile-videoBackground {
+                display: block;
+            }
 
 .spacer {
-        height: 90%;
+        height: 82%;
 }
 
     /* Main text */
@@ -142,9 +178,9 @@ font-family: 'Dot', sans-serif;
         width: 90%;
         max-width: 320px;
         margin:  auto;
-        font-size: 25px;
+        font-size: 19px;
         line-height: 1.5;
-        color: rgb(27, 21, 64);
+        color: rgb(0, 0, 0);
         text-align: left;
     }
 

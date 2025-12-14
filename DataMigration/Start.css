@@ -13,7 +13,7 @@ body {
 
 @font-face {
     font-family: 'Dot';
-    src: url('assets/fonts/Doto/static/Doto-ExtraBold.ttf');
+    src: url('assets/fonts/Doto/static/Doto-Medium.ttf');
 
 }
 
@@ -66,7 +66,17 @@ body {
     object-fit: cover; 
 }
 
+.chapter-indicator {
+    margin-top: 30px;
+    text-align: center;
 
+    font-family: 'Dot', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #b7b7b7;
+
+    pointer-events: none;
+}
 .center-bottom {
     display: flex;
     justify-content: center;
@@ -148,7 +158,7 @@ main p {
 /* Image grid layout */
 
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
 
 
     
@@ -166,7 +176,7 @@ main p {
         width: 90%;
         max-width: 320px;
         margin: auto;
-        font-size: 25px;
+        font-size: 19px;
         line-height: 1.5;
         color: rgb(255, 255, 255);
         text-align: left;
@@ -179,7 +189,7 @@ main p {
 
     }
 .spacer {
-    height: 86%;
+    height: 81%;
     width: 100%;
 }
 

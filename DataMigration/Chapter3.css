@@ -58,6 +58,18 @@ body {
     transition: opacity 0.3s ease;
     /* smooth hover effect */
 }
+
+.chapter-indicator {
+    margin-top: 30px;
+    text-align: center;
+
+    font-family: 'Dot', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
+
+    pointer-events: none;
+}
 .video-background video {
     width: 100%;
     height: 100%;
@@ -219,7 +231,7 @@ main p {
     transform: scale(1.1);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
 
     #video-background {
             display: none;
@@ -234,9 +246,9 @@ main p {
         width: 90%;
         max-width: 320px;
         margin: auto;
-        font-size: 25px;
+        font-size: 19px;
         line-height: 1.5;
-        color: rgb(27, 21, 64);
+        color: rgb(17, 17, 17);
         text-align: left;
     }
 
@@ -292,6 +304,6 @@ main p {
 
     }
 .spacer {
-    height: 90%;
+    height: 82%;
 }
 }
